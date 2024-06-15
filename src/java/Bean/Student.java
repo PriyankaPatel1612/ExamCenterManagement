@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Student {
     @Id
     @GeneratedValue
-    private int s_id;
+    private long s_id;
     private String name, address, contact, fees, admission_date, course, payment, password;
     @Column(unique = true, nullable = false)
     private String username;
