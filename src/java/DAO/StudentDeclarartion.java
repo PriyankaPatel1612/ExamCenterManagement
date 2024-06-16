@@ -10,4 +10,5 @@ public interface StudentDeclarartion {
     public boolean delete(long id);
     public Student selectStudent(long id);
     public ArrayList selectAllStudents();
+    public ArrayList searchByName(String name);
 }
