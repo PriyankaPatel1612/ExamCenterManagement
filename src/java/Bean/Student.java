@@ -8,10 +8,12 @@ public class Student {
     @Id
     @GeneratedValue
     private long s_id;
-    private String name, address, contact, fees, admission_date, course, payment, password;
+    private String name, address, contact, admission_date, course, payment, password;
+    private double fees;
+    
     @Column(unique = true, nullable = false)
     private String username;
-    public Student( String name, String address, String contact, String fees, String admission_date, String course, String payment, String username, String password) {
+    public Student( String name, String address, String contact, double fees, String admission_date, String course, String payment, String username, String password) {
         this.name = name;
         this.address = address;
         this.contact = contact;
@@ -21,15 +23,6 @@ public class Student {
         this.payment = payment;
         this.username = username;
         this.password = password;
-    }
-
-    
-    public int getS_id() {
-        return s_id;
-    }
-
-    public void setS_id(int s_id) {
-        this.s_id = s_id;
     }
 
     public String getName() {
@@ -56,13 +49,6 @@ public class Student {
         this.contact = contact;
     }
 
-    public String getFees() {
-        return fees;
-    }
-
-    public void setFees(String fees) {
-        this.fees = fees;
-    }
 
     public String getAdmission_date() {
         return admission_date;
@@ -102,6 +88,14 @@ public class Student {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public double getFees() {
+        return fees;
+    }
+
+    public void setFees(double fees) {
+        this.fees = fees;
     }
     
     

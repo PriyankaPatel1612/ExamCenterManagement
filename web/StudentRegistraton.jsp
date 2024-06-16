@@ -11,10 +11,14 @@
     <body>
         <div class="container">
             <h2>Student Registration</h2>
-            <form action="">
+            <form action="StudentController" method="post">
                 <div class="form-group">
-                    <label for="s_name">Student Name:</label>
-                    <input type="text" class="form-control" id="s_name">
+                    <label for="username">Username:</label>
+                    <input type="text" class="form-control" id="username">
+                </div>
+                <div class="form-group">
+                    <label for="name">Student Name:</label>
+                    <input type="text" class="form-control" id="name">
                 </div>
                 <div class="form-group">
                     <label for="address">Address:</label>
@@ -30,7 +34,7 @@
                 </div>
                 <div class="form-group">
                     <label for="admission_date">Admission Date:</label>
-                    <input type="text" class="form-control" id="admission_date">
+                    <input type="date" class="form-control" id="admission_date">
                 </div>
                 <div class="form-group">
                     <label for="course">Course:</label>

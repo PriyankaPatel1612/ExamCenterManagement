@@ -54,10 +54,14 @@ public final class StudentRegistraton_jsp extends org.apache.jasper.runtime.Http
       out.write("    <body>\n");
       out.write("        <div class=\"container\">\n");
       out.write("            <h2>Student Registration</h2>\n");
-      out.write("            <form action=\"\">\n");
+      out.write("            <form action=\"StudentController\" method=\"post\">\n");
       out.write("                <div class=\"form-group\">\n");
-      out.write("                    <label for=\"s_name\">Student Name:</label>\n");
-      out.write("                    <input type=\"text\" class=\"form-control\" id=\"s_name\">\n");
+      out.write("                    <label for=\"username\">Username:</label>\n");
+      out.write("                    <input type=\"text\" class=\"form-control\" id=\"username\">\n");
+      out.write("                </div>\n");
+      out.write("                <div class=\"form-group\">\n");
+      out.write("                    <label for=\"name\">Student Name:</label>\n");
+      out.write("                    <input type=\"text\" class=\"form-control\" id=\"name\">\n");
       out.write("                </div>\n");
       out.write("                <div class=\"form-group\">\n");
       out.write("                    <label for=\"address\">Address:</label>\n");
@@ -73,7 +77,7 @@ public final class StudentRegistraton_jsp extends org.apache.jasper.runtime.Http
       out.write("                </div>\n");
       out.write("                <div class=\"form-group\">\n");
       out.write("                    <label for=\"admission_date\">Admission Date:</label>\n");
-      out.write("                    <input type=\"text\" class=\"form-control\" id=\"admission_date\">\n");
+      out.write("                    <input type=\"date\" class=\"form-control\" id=\"admission_date\">\n");
       out.write("                </div>\n");
       out.write("                <div class=\"form-group\">\n");
       out.write("                    <label for=\"course\">Course:</label>\n");
